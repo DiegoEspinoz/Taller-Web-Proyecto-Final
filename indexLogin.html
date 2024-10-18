@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesLogin.css" />
+    <script type="module" src="script.js"></script>
+    <script>
+      function login() {
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+
+          if (username && password) {
+              window.location.href = "https://stackblitzstarterseo4bgd-m2zi--8080--28a8ce1b.local-credentialless.webcontainer.io/";
+          } else {
+              alert("Por favor, completa ambos campos antes de continuar.");
+          }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <form onsubmit="event.preventDefault(); login();">
+          <label for="username">Nombre de Usuario:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+
+          <button type="submit">Ingresar</button>
+      </form>
+      <div class="forgot-password">
+          <a href="recuperar_contraseña.html">Me olvidé mi contraseña</a>
+      </div>
+  </div>
+  </body>
+</html>
