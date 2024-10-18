@@ -1,0 +1,130 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo del encabezado */
+header {
+  background-color: #88dc65;
+  padding: 20px 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #7fcf5a;
+}
+
+.contenedor {
+  max-width: 40%;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.sedes p {
+  font-size: 1em;
+  line-height: 0.75em;
+  color: #555;
+}
+
+.separar-filas {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #4caf50;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.1em;
+  color: #4caf50;
+}
+
+/* Estilo del pie de página */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #88DC65;
+  color: white;
+  width: 100%;
+  margin-top: auto;
+  position: relative;
+}
+
+footer p {
+  margin-top: 20px; /* Ajusta el espacio para el texto de copyright */
+}
+
+.support-links {
+  display: flex;
+  justify-content: space-between; /* Distribuye los vínculos a los extremos y centro */
+  align-items: center;
+  width: 80%; /* Ajusta el ancho de la fila de enlaces */
+  margin: 0 auto; /* Centra el contenedor de enlaces */
+}
+
+.support-links div {
+  display: flex;
+  align-items: center;
+}
+
+.support-links svg {
+  margin-right: 10px;
+  fill: white; /* Color de los iconos SVG */
+}
+
+.support-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.support-links a:hover {
+  color: #cce7cc; /* Color al pasar el mouse por los enlaces */
+}
+
+@media (max-width: 900px) {
+  .support-links {
+    flex-direction: column; /* Los vínculos se apilan verticalmente */
+    gap: 15px; /* Espacio entre los vínculos */
+    width: 100%; /* Ajusta el ancho para usar el 100% del contenedor */
+  }
+
+  .support-links div {
+    justify-content: center; /* Centra cada vínculo e ícono en pantallas pequeñas */
+  }
+}
+
+q {
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: justify;
+  color: rgb(255, 255, 255);
+}
