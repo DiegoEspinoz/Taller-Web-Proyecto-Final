@@ -1,0 +1,211 @@
+body {
+  background-image: url(https://www.sopitas.com/wp-content/uploads/2016/04/universidad-thumb.jpg);
+  font-family: sans-serif;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color:rgb(52, 199, 52);
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+.final{
+  text-align: left;
+}
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: rgb(244, 244, 244);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 120px;
+  max-width: 60%;
+  border: 10px solid black;
+}
+
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, green, #88DC65);
+  margin: 20px 0;
+  animation: grow 2s ease forwards;
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.bottom-line {
+  margin-top: 20px;
+}
+
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #88DC65;
+  color: white;
+  width: 100%;
+  height: 10%;
+  bottom: auto;
+  position: relative;
+}
+
+footer p {
+  margin-top: 20px; /* Ajusta el espacio para el texto de copyright */
+}
+
+a {
+  color: black;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate; /* Permitir que funcione el redondeo */
+  background-color: #88DC65;
+  border-radius: 15px; /* Bordes redondeados */
+  overflow: hidden;
+  border-spacing: 0;
+}
+th, td {
+  border:1px solid white;
+  padding: 8px;
+  text-align: left;
+  color: white;
+}
+th {
+  background-color: #88DC65;
+}
+caption {
+  padding: 20px;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: green;
+}
+
+tr{
+  padding: 40px;
+}
+.infor{
+  color: rgb(16, 98, 206);
+}
+
+nav a:hover {
+  background-color: #7fcf5a;
+  color: #ff5722; /* Cambia a un color vibrante */
+  transform: scale(1.1); /* Hace que el enlace aumente un poco de tamaño */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: color 0.5s ease, transform 0.5s ease;
+}
+
+header {
+  background-color: #88DC65;
+  padding: 20px 20px;
+}
+
+.support-links {
+  display: flex;
+  justify-content: space-between; /* Distribuye los vínculos a los extremos y centro */
+  align-items: center;
+  width: 80%; /* Ajusta el ancho de la fila de enlaces */
+  margin: 0 auto; /* Centra el contenedor de enlaces */
+}
+
+.support-links div {
+  display: flex;
+  align-items: center;
+}
+
+.support-links svg {
+  margin-right: 10px;
+  fill: white; /* Color de los iconos SVG */
+}
+
+.support-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.support-links a:hover {
+  color: #cce7cc; /* Color al pasar el mouse por los enlaces */
+}
+
+@media (max-width: 900px) {
+  .support-links {
+    flex-direction: column; /* Los vínculos se apilan verticalmente */
+    gap: 15px; /* Espacio entre los vínculos */
+    width: 100%; /* Ajusta el ancho para usar el 100% del contenedor */
+  }
+
+  .support-links div {
+    justify-content: center; /* Centra cada vínculo e ícono en pantallas pequeñas */
+  }
+}
+
+main img {
+  transition: transform 0.5s ease;
+}
+
+main img:hover {
+  transform: scale(1.20); /* Aumenta un poco el tamaño de la imagen */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+table tbody tr:hover {
+  background-color: green; /* Cambia el color de fondo de la fila */
+}
