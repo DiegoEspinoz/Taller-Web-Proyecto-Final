@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Atención al Cliente</title>
+    <link rel="stylesheet" href="stylesAtencionAlCliente.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="Perfil.html">Perfil</a>
+        <a href="SobreNosotros.html">Sobre Nosotros</a>
+        <a href="AtencionAlCliente.html">Contacto</a>
+        <a href="Modalidades.html">Modalidades</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Atencion de Servicios</h1>
+        <form action="procesar_formulario.php" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required>
+
+          <label for="codigo">Código del Alumno:</label>
+          <input type="text" id="codigo" name="codigo" required>
+
+          <label for="razon">Descripcion:</label>
+          <textarea id="razon" name="razon" rows="4" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <footer>
+        <p>AcademiaCanvas © 2024</p>
+      </footer>
+    </main>
+  </body>
+</html>
